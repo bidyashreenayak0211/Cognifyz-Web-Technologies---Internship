@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Greeting Alert</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #9acba7;
+    }
+</style>
+</head>
+<body>
+    <script>
+        // Get the current time
+        var currentTime = new Date().getHours();
+
+        // Define the greeting message based on the time
+        var greetingMessage = "";
+        if (currentTime < 12) {
+            greetingMessage = "Good morning!";
+        } else if (currentTime < 18) {
+            greetingMessage = "Good afternoon!";
+        } else {
+            greetingMessage = "Good evening!";
+        }
+
+        // Display the greeting message in an alert box
+        alert(greetingMessage);
+    </script>
+</body>
+</html>

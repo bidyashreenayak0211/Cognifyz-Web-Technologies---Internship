@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="=UTF-8">
+        <meta name=""viewport content="width=device-width, initial-scale=1.0">
+        <title>Basic Form with CSS.</title>
+        <style>
+            body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input[type="text"] {
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        width: 80%;
+        max-width: 400px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        padding: 15px 40px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        background-color: #3498db;
+        color: #fff;
+        font-size: 18px;
+    }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <input type="text" placeholder="Enter your email">
+                <input type="submit" class="green-bg" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Changing Button</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+    }
+    .container {
+        text-align: center;
+    }
+    .color-button {
+        padding: 20px 40px;
+        font-size: 24px;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .color-button:hover {
+        background-color: #2980b9;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <button class="color-button" onclick="changeColor()">Click Me!</button>
+    </div>
+
+    <script>
+        function changeColor() {
+            var button = document.querySelector('.color-button');
+            var currentColor = button.style.backgroundColor;
+            
+            if (currentColor === 'rgb(52, 152, 219)') {
+                button.style.backgroundColor = '#e74c3c'; // Change to red
+            } else {
+                button.style.backgroundColor = '#3498db'; // Change back to blue
+            }
+        }
+    </script>
+</body>
+</html>

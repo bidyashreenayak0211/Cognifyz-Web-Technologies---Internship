@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #0f363f;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .box {
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: calc(33.33% - 20px);
+            box-sizing: border-box;
+            transition: transform 0.1s ease-in;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+        }
+
+        .box img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .box {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .box {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>The Mobile Store</h1>
+    </div>
+    <div class="container">
+        <div class="box">
+            <img src="Image1.png" alt="Image 1">
+            <h2>Samsung Galaxy S23</h2>
+            <p>Experience the future in your palm with Samsung Galaxy S23, where innovation meets elegance, redefining mobile excellence. </p>
+            <p>Elevate your digital lifestyle with unrivaled performance, stunning visuals, and seamless connectivity in the Samsung Galaxy S23.</p>
+        </div>
+        <div class="box">
+            <img src="Image2.png" alt="Image 2">
+            <h2>Poco X6 Pro</h2>
+            <p>The Poco X6 Pro boasts impressive performance and a sleek design, combining power and style seamlessly in a pocket-friendly package.</p>
+            <p> Its advanced features cater to both productivity and entertainment needs, making it a versatile choice for tech enthusiasts.</p>
+        </div>
+        <div class="box">
+            <img src="Image3.png" alt="Image 3">
+            <h2>iPhone 15 Pro Max</h2>
+            <p>The iPhone 15 Pro Max is the pinnacle of mobile technology, blending cutting-edge features with unparalleled performance to redefine the smartphone experience.</p>
+            <p>Its sleek design, advanced camera capabilities, and lightning-fast processing power make it a true powerhouse in the palm of your hand.</p>
+        </div>
+        <div class="box">
+            <img src="Image4.png" alt="Image 4">
+            <h2>Oppo F15</h2>
+            <p>The Oppo F15 is a sleek and stylish smartphone designed for those who prioritize both aesthetics and functionality. With its slim profile and vibrant AMOLED display, it offers an immersive viewing experience for multimedia enthusiasts. Equipped with a powerful processor and impressive camera capabilities, the Oppo F15 delivers smooth performance and stunning photos, making it a great choice for everyday use.</p>
+        </div>
+        <div class="box">
+            <img src="Image5.png" alt="Image 5">
+            <h2>Moto G60</h2>
+            <p>The Moto G60 is a mid-range smartphone with a strong focus on photography, featuring a 108MP main camera for detailed shots. Its large 6.8-inch display offers a vibrant and immersive viewing experience. With a 6000mAh battery, it provides long-lasting usage, making it a solid choice for users who prioritize photography and battery life.</p>
+        </div>
+    </div>
+</body>
+</html>

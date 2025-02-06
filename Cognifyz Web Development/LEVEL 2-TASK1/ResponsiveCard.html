@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Responsive Card</title>
+    <style>
+        /* Your custom styles can go here */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #67b8ae, #cdd9d9);
+            padding: 20px;
+            transition: background 0.5s ease;
+        }
+
+        .custom-card {
+            /* Add your custom styles for the card */
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(to right, powderblue , rgb(242, 243, 244));
+            transition: transform 0.3s ease;
+        }
+
+        .custom-card:hover {
+            transform: scale(1.05);
+        }
+
+        .custom-grid {
+            /* Add your custom styles for the grid */
+            margin-top: 20px;
+        }
+
+        /* Optional: Add a hover effect to Bootstrap cards */
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bulma Responsive Card -->
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card custom-card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="1.jpg" alt="Card image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <p>iPhone 14 by Apple .</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Responsive Grid -->
+    <div class="container custom-grid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Feature 1</h5>
+                        <p class="card-text">Advancements in low-light performance, zoom capabilities, and computational photography.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Feature 2</h5>
+                        <p class="card-text">Support for latest 5G technologies and improved Wi-Fi/Bluetooth connectivity.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Feature 3</h5>
+                        <p class="card-text">Faster Face ID, enhanced AR capabilities, and new biometric technologies..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
