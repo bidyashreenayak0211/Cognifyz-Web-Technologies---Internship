@@ -6,9 +6,9 @@ Welcome to my Web Developer Internship at Cognifyz Technologies. This internship
 ## Level 1
 
 ### Task 1: HTML & CSS
-Created a simple webpage with a heading, paragraph, and an image.
-Built a basic form with a single input field and a submit button.
-Designed and coded a simple navigation menu with three links.
+** Created a simple webpage with a heading, paragraph, and an image.
+** Built a basic form with a single input field and a submit button.
+** Designed and coded a simple navigation menu with three links.
 
 ### Task 2: JavaScript
 Developed a basic button that changes its color when clicked.
