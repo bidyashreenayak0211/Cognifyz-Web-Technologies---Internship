@@ -33,7 +33,7 @@ Implemented a simple image slideshow that automatically transitions between imag
 
 # Task 2: Web Developer Internship Opportunities at Cognifyz Technologies
 
-# Clear Headline: "Web Developer Internship Opportunities at Cognifyz Technologies."
+## Clear Headline: "Web Developer Internship Opportunities at Cognifyz Technologies."
 Brief Introduction: Overview of the internship program and duration.
 Highlights: Real-world experience, mentorship, and skill enhancement.
 Qualifications: Desired skills and technologies required for the internship.
